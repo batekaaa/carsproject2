@@ -1,136 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Cars Project</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supercars Project</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav>
-        <a href="#about">About</a> |
-        <a href="#favorites">Favorite Cars</a> |
-        <a href="#dream">Dream Cars</a> |
-        <a href="#comparison">Comparison</a> |
-        <a href="#feedback">Feedback</a>
-    </nav>
 
-    <h1>Team Cars Project</h1>
+  <header>
+    <h1>Supercars Project</h1>
     <h2>Group: SE-2416</h2>
 
-    <h3>Team Members</h3>
-    <ul>
-        <li><b>Batyrkhan Kairzhanov</b> – Frontend Developer</li>
-        <li><b>Asylkhan Aitzhan</b> – Designer</li>
-        <li><b>Amir Nagizkhanov</b> – Content Manager</li>
-    </ul>
 
-    <hr>
+    <nav>
+  <a href="#about">About</a>
+  <a href="#favorites">Favorite Cars</a>
+  <a href="#feedback">Feedback</a>
+</nav>
 
-    <section id="about">
+
+  </header>
+
+
+  <div class="main-layout">
+    <aside>
+      <h3>Team Members</h3>
+      <ul>
+        <li><b>Batyrkhan Kairzhanov</b></li>
+      </ul>
+      <div class="sidebar-box">
+        <p>Course: Web Development / Advanced CSS</p>
+      </div>
+    </aside>
+
+ <main>
+    <main>
+      <section id="about" class="section-box">
         <h2>About Project</h2>
-        <p>This website is made for Assignment 2. It demonstrates CSS styling, black-and-white theme, layouts, tables, forms, and interactive elements.</p>
-    </section>
+        <p class="about-text">
+          This project demonstrates <b>HTML & CSS styling</b> with Flexbox, Grid, tables, forms, and animations.
+          It combines <span class="highlight">modern design</span> and <span class="highlight">functionality</span>
+          to showcase cars in a stylish way.
+        </p>
+      </section>
 
-    <section id="favorites">
-       <h3>Favorite Cars of Team Members</h3>
-<table>
-    <tr>
-        <th>Name</th>
-        <th>Favorite Car</th>
-        <th>Reason</th>
-    </tr>
-    <tr>
-        <td>Batyrkhan Kairzhanov</td>
-        <td>Audi RS7</td>
-        <td>Excellent handling and aggressive design</td>
-    </tr>
-    <tr>
-        <td>Asylkhan Aitzhan</td>
-        <td>Lexus IS250</td>
-        <td>Comfortable and reliable</td>
-    </tr>
-    <tr>
-        <td>Amir Nagizkhanov</td>
-        <td>BMW M5 F90</td>
-        <td>High performance with luxury interior</td>
-    </tr>
-</table>
 
-    <section id="dream">
-        <h3>Our Dream Cars</h3>
-
-        <input type="checkbox" id="showCarsCheckbox" style="display:none;">
-        <label for="showCarsCheckbox" class="btn">Show Dream Cars</label>
-
-        <div class="dream-car-container">
-            <div class="car-wrapper">
-                <img src="911.jpg" alt="Dream Car 1" class="car-photo">
-                <p>Car 1</p>
-            </div>
-            <div class="car-wrapper">
-                <img src="laferrari.jpg" alt="Dream Car 2" class="car-photo">
-                <p>Car 2</p>
-            </div>
-            <div class="car-wrapper">
-                <img src="gelik.jpg" alt="Dream Car 3" class="car-photo">
-                <p>Car 3</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="comparison">
-        <h3>Car Comparison</h3>
-        <table>
-            <tr>
-                <th>Car</th>
-                <th>Type</th>
-                <th>Price</th>
-            </tr>
-            <tr>
-                <td>Audi RS7</td>
-                <td>Sports</td>
-                <td>$130,000</td>
-            </tr>
-            <tr>
-                <td>Lexus IS250</td>
-                <td>Sports</td>
-                <td>$50,000</td>
-            </tr>
-            <tr>
-                <td>BMW M5 F90</td>
-                <td>Sports</td>
-                <td>$100,000</td>
-            </tr>
+      <section id="favorites" class="section-box">
+        <h2>My 3 Favorite Cars</h2>
+        <table class="favorites-table">
+          <tr>
+            <th>Favorite Car</th>
+            <th>Reason</th>
+          </tr>
+          <tr>
+            <td>Audi RS7</td>
+            <td>Excellent handling and aggressive design</td>
+          </tr>
+          <tr>
+            <td>LaFerrari</td>
+            <td>Extreme speed and futuristic style</td>
+          </tr>
+          <tr>
+            <td>Lexus IS250 Sport</td>
+            <td>Comfortable and sporty performance</td>
+          </tr>
         </table>
-        <p>Today our mood is great 😎🔥🎉</p>
-    </section>
+      </section>
 
-    <section id="feedback">
-        <h3>Feedback Form</h3>
-        <form>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" placeholder="Your Name"><br>
+<header>
+  <h1>Choose a Car</h1>
+  <nav>
+    <a href="#porsche911">Porsche 911</a>
+    <a href="#aventador">Aventador</a>
+    <a href="#chiron">Chiron</a>
+    <a href="#rs7">Audi RS7</a>
+    <a href="#gelik">G-Wagon</a>
+    <a href="#supra">Supra</a>
+    <a href="#r8">Audi R8</a>
+    <a href="#m3">BMW M3</a>
+    <a href="#mustang">Mustang</a>
+    <a href="#gtr">GT-R</a>
+  </nav>
+</header>
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" placeholder="Your Email"><br>
 
-            <label for="car">Favorite Car:</label><br>
-            <input type="text" id="car" name="car" placeholder="Car Name"><br>
+<main class="card-grid">
+  <div class="card" id="porsche911">
+    <img src="911.jpg" alt="Porsche 911">
+    <h3>Porsche 911</h3>
+    <details>
+      <summary>Details</summary>
+      <ul>
+        <li><b>Power:</b> 450 hp</li>
+        <li><b>Engine:</b> 3.0L Twin-Turbo H6</li>
+        <li><b>0-100 km/h:</b> 3.5s</li>
+        <li><b>Top Speed:</b> 310 km/h</li>
+      </ul>
+    </details>
+  </div>
 
-            <label for="color">Favorite Color:</label><br>
-            <input type="color" id="color" name="color"><br>
 
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" placeholder="Your message"></textarea><br>
+  <div class="card" id="aventador">
+    <img src="aventador.jpg" alt="Lamborghini Aventador">
+    <h3>Lamborghini Aventador</h3>
+    <details>
+      <summary>Details</summary>
+      <ul>
+        <li><b>Power:</b> 730 hp</li>
+        <li><b>Engine:</b> 6.5L V12</li>
+        <li><b>0-100 km/h:</b> 2.9s</li>
+        <li><b>Top Speed:</b> 350 km/h</li>
+      </ul>
+    </details>
+  </div>
 
-            <input type="submit" value="Submit" class="btn">
-        </form>
-    </section>
 
-    <footer>
-        <p>© 2025 Team Cars Project | SE-2416 | Batyrkhan Kairzhanov, Asylkhan Aitzhan, Amir Nagizkhanov</p>
-    </footer>
+  <div class="card" id="chiron">
+    <img src="chiron.jpg" alt="Bugatti Chiron">
+    <h3>Bugatti Chiron</h3>
+    <details>
+      <summary>Details</summary>
+      <ul>
+        <li><b>Power:</b> 1500 hp</li>
+        <li><b>Engine:</b> 8.0L W16</li>
+        <li><b>0-100 km/h:</b> 2.4s</li>
+        <li><b>Top Speed:</b> 420 km/h</li>
+      </ul>
+    </details>
+  </div>
+
+  <div class="card" id="rs7">
+    <img src="rs7.jpg" alt="Audi RS7">
+    <h3>Audi RS7</h3>
+    <details>
+      <summary>Details</summary>
+      <ul>
+        <li><b>Power:</b> 600 hp</li>
+        <li><b>Engine:</b> 4.0L Twin-Turbo V8</li>
+        <li><b>0-100 km/h:</b> 3.6s</li>
+        <li><b>Top Speed:</b> 305 km/h</li>
+      </ul>
+    </details>
+  </div>
+
+
+  <div class="card" id="gelik">
+    <img src="gelik.jpg" alt="G-Wagon">
+    <h3>Mercedes G-Wagon</h3>
+    <details>
+      <summary>Details</summary>
+      <ul>
+        <li><b>Power:</b> 577 hp</li>
+        <li><b>Engine:</b> 4.0L V8 Bi-Turbo</li>
+        <li><b>0-100 km/h:</b> 4.5s</li>
+        <li><b>Top Speed:</b> 210 km/h</li>
+      </ul>
+    </details>
+  </div>
+
+
+  <div class="card" id="supra">
+    <img src="supra.jpg" alt="Toyota Supra">
+    <h3>Toyota Supra</h3>
+    <details>
+      <summary>Details</summary>
+      <ul>
+        <li><b>Power:</b> 382 hp</li>
+        <li><b>Engine:</b> 3.0L I6 Turbo</li>
+        <li><b>0-100 km/h:</b> 4.1s</li>
+        <li><b>Top Speed:</b> 250 km/h</li>
+      </ul>
+    </details>
+  </div>
+
+
+  <div class="card" id="r8">
+    <img src="r8.jpg" alt="Audi R8">
+    <h3>Audi R8</h3>
+    <details>
+      <summary>Details</summary>
+      <ul>
+        <li><b>Power:</b> 562 hp</li>
+        <li><b>Engine:</b> 5.2L V10</li>
+        <li><b>0-100 km/h:</b> 3.5s</li>
+        <li><b>Top Speed:</b> 330 km/h</li>
+      </ul>
+    </details>
+  </div>
+
+  <div class="card" id="m3">
+    <img src="m3.jpg" alt="BMW M3">
+    <h3>BMW M3</h3>
+    <details>
+      <summary>Details</summary>
+      <ul>
+        <li><b>Power:</b> 473 hp</li>
+        <li><b>Engine:</b> 3.0L I6 Turbo</li>
+        <li><b>0-100 km/h:</b> 4.1s</li>
+        <li><b>Top Speed:</b> 290 km/h</li>
+      </ul>
+    </details>
+  </div>
+
+
+  <div class="card" id="mustang">
+    <img src="mustang.jpg" alt="Ford Mustang GT">
+    <h3>Ford Mustang GT</h3>
+    <details>
+      <summary>Details</summary>
+      <ul>
+        <li><b>Power:</b> 450 hp</li>
+        <li><b>Engine:</b> 5.0L V8</li>
+        <li><b>0-100 km/h:</b> 4.3s</li>
+        <li><b>Top Speed:</b> 250 km/h</li>
+      </ul>
+    </details>
+  </div>
+
+
+  <div class="card" id="gtr">
+    <img src="gtr.jpg" alt="Nissan GT-R">
+    <h3>Nissan GT-R</h3>
+    <details>
+      <summary>Details</summary>
+      <ul>
+        <li><b>Power:</b> 565 hp</li>
+        <li><b>Engine:</b> 3.8L V6 Twin-Turbo</li>
+        <li><b>0-100 km/h:</b> 2.9s</li>
+        <li><b>Top Speed:</b> 315 km/h</li>
+      </ul>
+    </details>
+  </div>
+</main>
+
 
 </body>
 </html>
+
+      <section id="feedback" class="section-box">
+        <h2>Feedback Form</h2>
+        <form>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" placeholder="Your Name"><br>
+
+
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" placeholder="Your Email"><br>
+
+
+          <label for="car">Favorite Car:</label><br>
+          <input type="text" id="car" name="car" placeholder="Car Name"><br>
+
+
+          <label for="color">Favorite Color:</label><br>
+          <input type="color" id="color" name="color"><br>
+
+
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="4" placeholder="Your message"></textarea><br>
+
+
+          <input type="submit" value="Submit" class="btn">
+        </form>
+      </section>
+    </main>
+
+
+    <footer>
+      <p>© 2025 Supercars Project | SE-2416 | Batyrkhan Kairzhanov</p>
+    </footer>
+
+
+  </div>
+
+</body>
+</html>  
+
+
