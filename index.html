@@ -1,367 +1,303 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Supercars Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <nav class="navbar sticky-top navbar-expand-lg" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand text-accent fw-bold" href="#">Supercars</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+              aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <header>
-    <h1>Supercars Project</h1>
-    <h2>Group: SE-2416</h2>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#intro">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cars">Categories</a></li>
+        </ul>
 
-<<<<<<< HEAD
-=======
-    <h3>Team Members</h3>
-    <ul>
-        <li><b>Batyrkhan Kairzhanov</b></li>
-    </ul>
->>>>>>> 0bb51159003e2895df941b14d0b98fa1ac763453
-
-    <nav>
-  <a href="#about">About</a>
-  <a href="#favorites">Favorite Cars</a>
-  <a href="#feedback">Feedback</a>
-</nav>
-
-
-  </header>
-
-
-  <div class="main-layout">
-    <aside>
-      <h3>Team Members</h3>
-      <ul>
-        <li><b>Batyrkhan Kairzhanov</b></li>
-      </ul>
-      <div class="sidebar-box">
-        <p>Course: Web Development / Advanced CSS</p>
-      </div>
-    </aside>
-
- <main>
-    <main>
-      <section id="about" class="section-box">
-        <h2>About Project</h2>
-        <p class="about-text">
-          This project demonstrates <b>HTML & CSS styling</b> with Flexbox, Grid, tables, forms, and animations.
-          It combines <span class="highlight">modern design</span> and <span class="highlight">functionality</span>
-          to showcase cars in a stylish way.
-        </p>
-      </section>
-
-<<<<<<< HEAD
-
-      <section id="favorites" class="section-box">
-        <h2>My 3 Favorite Cars</h2>
-        <table class="favorites-table">
-          <tr>
-            <th>Favorite Car</th>
-            <th>Reason</th>
-          </tr>
-          <tr>
-            <td>Audi RS7</td>
-            <td>Excellent handling and aggressive design</td>
-          </tr>
-          <tr>
-            <td>LaFerrari</td>
-            <td>Extreme speed and futuristic style</td>
-          </tr>
-          <tr>
-            <td>Lexus IS250 Sport</td>
-            <td>Comfortable and sporty performance</td>
-          </tr>
-=======
-    <section id="favorites">
-        <h3>My Favorite Cars</h3>
-        <table>
-            <tr>
-                <th>Favorite Car</th>
-                <th>Reason</th>
-            </tr>
-            <tr>
-                <td>Audi RS7</td>
-                <td>Excellent handling and aggressive design</td>
-            </tr>
-            <tr>
-                <td>LaFerrari</td>
-                <td>Extreme speed and futuristic style</td>
-            </tr>
-            <tr>
-                <td>Lexus IS250 Sport</td>
-                <td>Comfortable and sporty performance</td>
-            </tr>
-        </table>
-    </section>
-
-    <section id="dream">
-        <h3>My Dream Cars</h3>
-
-        <input type="checkbox" id="showCarsCheckbox" style="display:none;">
-        <label for="showCarsCheckbox" class="btn">Show Dream Cars</label>
-
-        <div class="dream-car-container">
-            <div class="car-wrapper">
-                <img src="911.jpg" alt="Dream Car 1" class="car-photo">
-                <p>Car 1</p>
-            </div>
-            <div class="car-wrapper">
-                <img src="laferrari.jpg" alt="Dream Car 2" class="car-photo">
-                <p>Car 2</p>
-            </div>
-            <div class="car-wrapper">
-                <img src="gelik.jpg" alt="Dream Car 3" class="car-photo">
-                <p>Car 3</p>
-            </div>
+        <div class="d-flex align-items-center">
+          <div class="btn-group me-2" role="group" aria-label="Filter cars">
+            <button type="button" class="btn btn-outline-accent btn-sm">All</button>
+            <button type="button" class="btn btn-outline-accent btn-sm">Supercars</button>
+            <button type="button" class="btn btn-outline-accent btn-sm">Sports</button>
+          </div>
+          <a class="btn btn-accent btn-sm" href="#cars">Browse</a>
         </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container px-2 px-sm-3 mt-4 mt-lg-5 mb-5">
+
+    <section id="intro" class="row g-4 mb-4">
+      <div class="col-12 col-lg-6">
+        <article class="bg-panel rounded-3 p-3 p-lg-4">
+          <h1 class="h3 mb-1 text-accent">Supercars Project</h1>
+          <p class="mb-0 text-muted">Responsive demo: media queries + Bootstrap grid, carousel and accessible details modal.</p>
+        </article>
+      </div>
     </section>
 
-    <section id="comparison">
-        <h3>Car Comparison</h3>
-        <table>
-            <tr>
-                <th>Car</th>
-                <th>Type</th>
-                <th>Price</th>
-            </tr>
-            <tr>
-                <td>Audi RS7</td>
-                <td>Sports</td>
-                <td>$130,000</td>
-            </tr>
-            <tr>
-                <td>Lexus IS250 Sport</td>
-                <td>Sports</td>
-                <td>$50,000</td>
-            </tr>
-            <tr>
-                <td>Laferrari</td>
-                <td>Hypercar</td>
-                <td>$350,000</td>
-            </tr>
->>>>>>> 0bb51159003e2895df941b14d0b98fa1ac763453
-        </table>
-      </section>
+    <!-- Top Picks -->
+    <section class="bg-panel rounded-3 p-3 p-lg-4 mb-5">
+      <h2 class="text-accent mb-3">Top Picks</h2>
+      <div class="css-cards mb-4" role="list">
+        <article class="css-card" role="listitem">
+          <img src="911.jpg" alt="Porsche 911" class="css-card-img">
+          <h3 class="css-card-title">Porsche 911</h3>
+          <p class="css-card-text">Rear-engine icon: agile handling, flat-six power, everyday usability.</p>
+          <button type="button" class="btn btn-outline-accent btn-sm mt-3"
+                  data-bs-toggle="modal" data-bs-target="#detailsModal"
+                  data-name="Porsche 911" data-img="911.jpg"
+                  data-desc="Porsche 911: agile chassis, flat-six engines and years of refinement — excellent daily sports car. 0-100 km/h ~3.5s (variants vary).">Details</button>
+        </article>
 
-<header>
-  <h1>Choose a Car</h1>
-  <nav>
-    <a href="#porsche911">Porsche 911</a>
-    <a href="#aventador">Aventador</a>
-    <a href="#chiron">Chiron</a>
-    <a href="#rs7">Audi RS7</a>
-    <a href="#gelik">G-Wagon</a>
-    <a href="#supra">Supra</a>
-    <a href="#r8">Audi R8</a>
-    <a href="#m3">BMW M3</a>
-    <a href="#mustang">Mustang</a>
-    <a href="#gtr">GT-R</a>
-  </nav>
-</header>
+        <article class="css-card" role="listitem">
+          <img src="aventador.jpg" alt="Lamborghini Aventador" class="css-card-img">
+          <h3 class="css-card-title">Lamborghini Aventador</h3>
+          <p class="css-card-text">V12 supercar with sharp styling and raw performance.</p>
+          <button type="button" class="btn btn-outline-accent btn-sm mt-3"
+                  data-bs-toggle="modal" data-bs-target="#detailsModal"
+                  data-name="Lamborghini Aventador" data-img="aventador.jpg"
+                  data-desc="Aventador: V12 power, scissor doors and dramatic design. Suited to drivers who want extreme performance and presence.">Details</button>
+        </article>
 
+        <article class="css-card" role="listitem">
+          <img src="chiron.jpg" alt="Bugatti Chiron" class="css-card-img">
+          <h3 class="css-card-title">Bugatti Chiron</h3>
+          <p class="css-card-text">Ultimate hypercar: immense power and luxury.</p>
+          <button type="button" class="btn btn-outline-accent btn-sm mt-3"
+                  data-bs-toggle="modal" data-bs-target="#detailsModal"
+                  data-name="Bugatti Chiron" data-img="chiron.jpg"
+                  data-desc="Chiron: quad-turbocharged W16, handcrafted luxury and extreme top speeds. Ultra-limited production and extraordinary performance.">Details</button>
+        </article>
+      </div>
+    </section>
 
-<main class="card-grid">
-  <div class="card" id="porsche911">
-    <img src="911.jpg" alt="Porsche 911">
-    <h3>Porsche 911</h3>
-    <details>
-      <summary>Details</summary>
-      <ul>
-        <li><b>Power:</b> 450 hp</li>
-        <li><b>Engine:</b> 3.0L Twin-Turbo H6</li>
-        <li><b>0-100 km/h:</b> 3.5s</li>
-        <li><b>Top Speed:</b> 310 km/h</li>
-      </ul>
-    </details>
+    <!-- Enlarged Carousel with 11 images -->
+    <section class="mb-5">
+      <div class="bg-panel rounded-3 p-3 p-lg-4">
+        <h2 class="text-accent mb-3">Gallery (11 images)</h2>
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" aria-label="Supercars carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="10" aria-label="Slide 11"></button>
+          </div>
+
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active"><img src="911.jpg" class="d-block w-100" alt="Porsche 911"></div>
+            <div class="carousel-item"><img src="aventador.jpg" class="d-block w-100" alt="Aventador"></div>
+            <div class="carousel-item"><img src="chiron.jpg" class="d-block w-100" alt="Chiron"></div>
+            <div class="carousel-item"><img src="rs7.jpg" class="d-block w-100" alt="Audi RS7"></div>
+            <div class="carousel-item"><img src="gelik.jpg" class="d-block w-100" alt="Mercedes G-Wagon"></div>
+            <div class="carousel-item"><img src="supra.jpg" class="d-block w-100" alt="Toyota Supra"></div>
+            <div class="carousel-item"><img src="r8.jpg" class="d-block w-100" alt="Audi R8"></div>
+            <div class="carousel-item"><img src="m3.jpg" class="d-block w-100" alt="BMW M3"></div>
+            <div class="carousel-item"><img src="mustang.jpg" class="d-block w-100" alt="Ford Mustang"></div>
+            <div class="carousel-item"><img src="gtr.jpg" class="d-block w-100" alt="Nissan GT-R"></div>
+            <div class="carousel-item"><img src="laferrari.jpg" class="d-block w-100" alt="LaFerrari"></div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Previous slide">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Next slide">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured and All Cars (11) -->
+    <section class="mb-5">
+      <h2 class="text-accent mb-3">Featured Cars</h2>
+
+      <div class="row g-4 mb-4">
+        <!-- Chiron -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="chiron.jpg" class="card-img-top" alt="Bugatti Chiron">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-accent">Bugatti Chiron</h5>
+              <p class="card-text text-muted">Hypercar, quad-turbo W16.</p>
+              <div class="mt-auto d-flex gap-2">
+                <button type="button" class="btn btn-outline-accent btn-sm" data-bs-toggle="modal" data-bs-target="#detailsModal"
+                        data-name="Bugatti Chiron" data-img="chiron.jpg" data-desc="Chiron: quad-turbocharged W16, handcrafted luxury and extreme top speeds.">Details</button>
+                <button class="btn btn-outline-accent btn-sm">Compare</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Aventador -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="aventador.jpg" class="card-img-top" alt="Aventador">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-accent">Lamborghini Aventador</h5>
+              <p class="card-text text-muted">V12 flagship.</p>
+              <div class="mt-auto d-flex gap-2">
+                <button type="button" class="btn btn-outline-accent btn-sm" data-bs-toggle="modal" data-bs-target="#detailsModal"
+                        data-name="Lamborghini Aventador" data-img="aventador.jpg" data-desc="Aventador: V12 power, bold styling and track-capable performance.">Details</button>
+                <button class="btn btn-outline-accent btn-sm">Compare</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 911 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="911.jpg" class="card-img-top" alt="Porsche 911">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-accent">Porsche 911</h5>
+              <p class="card-text text-muted">Iconic sports car.</p>
+              <div class="mt-auto d-flex gap-2">
+                <button type="button" class="btn btn-outline-accent btn-sm" data-bs-toggle="modal" data-bs-target="#detailsModal"
+                        data-name="Porsche 911" data-img="911.jpg" data-desc="911: agile chassis, flat-six engines and years of refinement — excellent daily sports car.">Details</button>
+                <button class="btn btn-outline-accent btn-sm">Compare</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="text-accent mb-3">All Cars</h3>
+      <div class="row g-3">
+        <!-- 11 cards -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card"><img src="911.jpg" class="card-img-top" alt="Porsche 911"><div class="card-body"><h6 class="card-title">Porsche 911</h6><button type="button" class="btn btn-outline-accent btn-sm" data-bs-toggle="modal" data-bs-target="#detailsModal" data-name="Porsche 911" data-img="911.jpg" data-desc="Porsche 911: agile chassis, flat-six engines and years of refinement.">Details</button></div></div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card"><img src="aventador.jpg" class="card-img-top" alt="Aventador"><div class="card-body"><h6 class="card-title">Lamborghini Aventador</h6><button type="button" class="btn btn-outline-accent btn-sm" data-bs-toggle="modal" data-bs-target="#detailsModal" data-name="Lamborghini Aventador" data-img="aventador.jpg" data-desc="Aventador: V12 power, dramatic design.">Details</button></div></div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card"><img src="chiron.jpg" class="card-img-top" alt="Chiron"><div class="card-body"><h6 class="card-title">Bugatti Chiron</h6><button type="button" class="btn btn-outline-accent btn-sm" data-bs-toggle="modal" data-bs-target="#detailsModal" data-name="Bugatti Chiron" data-img="chiron.jpg" data-desc="Chiron: quad-turbocharged W16 and unmatched top speed.">Details</button></div></div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card"><img src="rs7.jpg" class="card-img-top" alt="RS7"><div class="card-body"><h6 class="card-title">Audi RS7</h6><button type="button" class="btn btn-outline-accent btn-sm" data-bs-toggle="modal" data-bs-target="#detailsModal" data-name="Audi RS7" data-img="rs7.jpg" data-desc="RS7: powerful twin-turbo V8 and spacious four-door coupe styling.">Details</button></div></div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card"><img src="gelik.jpg" class="card-img-top" alt="G-Wagon"><div class="card-body"><h6 class="card-title">Mercedes G-Wagon</h6><button type="button" class="btn btn-outline-accent btn-sm" data-bs-toggle="modal" data-bs-target="#detailsModal" data-name="Mercedes G-Wagon" data-img="gelik.jpg" data-desc="G-Wagon: luxury off-roader with premium interior and strong engines.">Details</button></div></div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card"><img src="supra.jpg" class="card-img-top" alt="Supra"><div class="card-body"><h6 class="card-title">Toyota Supra</h6><button type="button" class="btn btn-outline-accent btn-sm" data-bs-toggle="modal" data-bs-target="#detailsModal" data-name="Toyota Supra" data-img="supra.jpg" data-desc="Supra: lightweight sports coupe with turbocharged inline-6 and sharp handling.">Details</button></div></div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card"><img src="r8.jpg" class="card-img-top" alt="R8"><div class="card-body"><h6 class="card-title">Audi R8</h6><button type="button" class="btn btn-outline-accent btn-sm" data-bs-toggle="modal" data-bs-target="#detailsModal" data-name="Audi R8" data-img="r8.jpg" data-desc="R8: mid-engine V10 supercar, daily-drivable and fast.">Details</button></div></div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card"><img src="m3.jpg" class="card-img-top" alt="M3"><div class="card-body"><h6 class="card-title">BMW M3</h6><button type="button" class="btn btn-outline-accent btn-sm" data-bs-toggle="modal" data-bs-target="#detailsModal" data-name="BMW M3" data-img="m3.jpg" data-desc="M3: performance sedan with sharp handling and strong engines.">Details</button></div></div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card"><img src="mustang.jpg" class="card-img-top" alt="Mustang"><div class="card-body"><h6 class="card-title">Ford Mustang</h6><button type="button" class="btn btn-outline-accent btn-sm" data-bs-toggle="modal" data-bs-target="#detailsModal" data-name="Ford Mustang" data-img="mustang.jpg" data-desc="Mustang: American muscle range from EcoBoost to V8 GT; track variants available.">Details</button></div></div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card"><img src="gtr.jpg" class="card-img-top" alt="GT-R"><div class="card-body"><h6 class="card-title">Nissan GT-R</h6><button type="button" class="btn btn-outline-accent btn-sm" data-bs-toggle="modal" data-bs-target="#detailsModal" data-name="Nissan GT-R" data-img="gtr.jpg" data-desc="GT-R: AWD twin-turbo performance car with excellent lap times.">Details</button></div></div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card"><img src="laferrari.jpg" class="card-img-top" alt="LaFerrari"><div class="card-body"><h6 class="card-title">Ferrari LaFerrari</h6><button type="button" class="btn btn-outline-accent btn-sm" data-bs-toggle="modal" data-bs-target="#detailsModal" data-name="Ferrari LaFerrari" data-img="laferrari.jpg" data-desc="LaFerrari: hybrid hypercar mixing V12 and electric assistance for extreme performance.">Details</button></div></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact form -->
+    <section id="contact" class="mb-5">
+      <div class="bg-panel rounded-3 p-3 p-lg-4">
+        <h2 class="text-accent mb-3">Contact us</h2>
+        <form class="row g-3" aria-label="Contact form" autocomplete="on">
+          <div class="col-12 col-md-6"><label class="form-label visually-hidden" for="name">Name</label><input id="name" class="form-control" placeholder="Your name" required></div>
+          <div class="col-12 col-md-6"><label class="form-label visually-hidden" for="email">Email</label><input id="email" class="form-control" type="email" placeholder="you@example.com" required></div>
+          <div class="col-12"><input id="subject" class="form-control" placeholder="Subject"></div>
+          <div class="col-12"><textarea id="message" class="form-control" rows="4" placeholder="Your message"></textarea></div>
+          <div class="col-12 d-flex gap-2"><button class="btn btn-accent" type="submit">Send message</button><button class="btn btn-outline-accent" type="reset">Reset</button></div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Details modal (single reused modal) -->
+  <div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="detailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content bg-panel">
+        <div class="modal-header border-0">
+          <h5 class="modal-title text-accent" id="detailsModalLabel">Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-3">
+            <div class="col-12 col-md-6">
+              <img id="modalCarImg" src="" alt="" class="img-fluid rounded">
+            </div>
+            <div class="col-12 col-md-6">
+              <h4 id="modalCarTitle" class="text-accent mb-2"></h4>
+              <p id="modalCarDesc" class="text-muted"></p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-outline-accent" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-accent">Inquire</button>
+        </div>
+      </div>
+    </div>
   </div>
 
+  <footer class="text-center py-4 mt-4">
+    <div class="container"><p class="mb-0 small text-muted">© 2025 Supercars Project | SE-2416</p></div>
+  </footer>
 
-  <div class="card" id="aventador">
-    <img src="aventador.jpg" alt="Lamborghini Aventador">
-    <h3>Lamborghini Aventador</h3>
-    <details>
-      <summary>Details</summary>
-      <ul>
-        <li><b>Power:</b> 730 hp</li>
-        <li><b>Engine:</b> 6.5L V12</li>
-        <li><b>0-100 km/h:</b> 2.9s</li>
-        <li><b>Top Speed:</b> 350 km/h</li>
-      </ul>
-    </details>
-  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Populate modal from clicked Details button
+    (function () {
+      var detailsModal = document.getElementById('detailsModal');
+      if (!detailsModal) return;
+      detailsModal.addEventListener('show.bs.modal', function (event) {
+        var button = event.relatedTarget;
+        if (!button) return;
+        var name = button.getAttribute('data-name') || 'Car';
+        var desc = button.getAttribute('data-desc') || '';
+        var img = button.getAttribute('data-img') || '';
 
-
-<<<<<<< HEAD
-  <div class="card" id="chiron">
-    <img src="chiron.jpg" alt="Bugatti Chiron">
-    <h3>Bugatti Chiron</h3>
-    <details>
-      <summary>Details</summary>
-      <ul>
-        <li><b>Power:</b> 1500 hp</li>
-        <li><b>Engine:</b> 8.0L W16</li>
-        <li><b>0-100 km/h:</b> 2.4s</li>
-        <li><b>Top Speed:</b> 420 km/h</li>
-      </ul>
-    </details>
-  </div>
-
-  <div class="card" id="rs7">
-    <img src="rs7.jpg" alt="Audi RS7">
-    <h3>Audi RS7</h3>
-    <details>
-      <summary>Details</summary>
-      <ul>
-        <li><b>Power:</b> 600 hp</li>
-        <li><b>Engine:</b> 4.0L Twin-Turbo V8</li>
-        <li><b>0-100 km/h:</b> 3.6s</li>
-        <li><b>Top Speed:</b> 305 km/h</li>
-      </ul>
-    </details>
-  </div>
-
-
-  <div class="card" id="gelik">
-    <img src="gelik.jpg" alt="G-Wagon">
-    <h3>Mercedes G-Wagon</h3>
-    <details>
-      <summary>Details</summary>
-      <ul>
-        <li><b>Power:</b> 577 hp</li>
-        <li><b>Engine:</b> 4.0L V8 Bi-Turbo</li>
-        <li><b>0-100 km/h:</b> 4.5s</li>
-        <li><b>Top Speed:</b> 210 km/h</li>
-      </ul>
-    </details>
-  </div>
-
-
-  <div class="card" id="supra">
-    <img src="supra.jpg" alt="Toyota Supra">
-    <h3>Toyota Supra</h3>
-    <details>
-      <summary>Details</summary>
-      <ul>
-        <li><b>Power:</b> 382 hp</li>
-        <li><b>Engine:</b> 3.0L I6 Turbo</li>
-        <li><b>0-100 km/h:</b> 4.1s</li>
-        <li><b>Top Speed:</b> 250 km/h</li>
-      </ul>
-    </details>
-  </div>
-
-
-  <div class="card" id="r8">
-    <img src="r8.jpg" alt="Audi R8">
-    <h3>Audi R8</h3>
-    <details>
-      <summary>Details</summary>
-      <ul>
-        <li><b>Power:</b> 562 hp</li>
-        <li><b>Engine:</b> 5.2L V10</li>
-        <li><b>0-100 km/h:</b> 3.5s</li>
-        <li><b>Top Speed:</b> 330 km/h</li>
-      </ul>
-    </details>
-  </div>
-
-  <div class="card" id="m3">
-    <img src="m3.jpg" alt="BMW M3">
-    <h3>BMW M3</h3>
-    <details>
-      <summary>Details</summary>
-      <ul>
-        <li><b>Power:</b> 473 hp</li>
-        <li><b>Engine:</b> 3.0L I6 Turbo</li>
-        <li><b>0-100 km/h:</b> 4.1s</li>
-        <li><b>Top Speed:</b> 290 km/h</li>
-      </ul>
-    </details>
-  </div>
-
-
-  <div class="card" id="mustang">
-    <img src="mustang.jpg" alt="Ford Mustang GT">
-    <h3>Ford Mustang GT</h3>
-    <details>
-      <summary>Details</summary>
-      <ul>
-        <li><b>Power:</b> 450 hp</li>
-        <li><b>Engine:</b> 5.0L V8</li>
-        <li><b>0-100 km/h:</b> 4.3s</li>
-        <li><b>Top Speed:</b> 250 km/h</li>
-      </ul>
-    </details>
-  </div>
-
-
-  <div class="card" id="gtr">
-    <img src="gtr.jpg" alt="Nissan GT-R">
-    <h3>Nissan GT-R</h3>
-    <details>
-      <summary>Details</summary>
-      <ul>
-        <li><b>Power:</b> 565 hp</li>
-        <li><b>Engine:</b> 3.8L V6 Twin-Turbo</li>
-        <li><b>0-100 km/h:</b> 2.9s</li>
-        <li><b>Top Speed:</b> 315 km/h</li>
-      </ul>
-    </details>
-  </div>
-</main>
-
-=======
-    <footer>
-        <p>© 2025 Team Cars Project | SE-2416 | Batyrkhan Kairzhanov</p>
-    </footer>
->>>>>>> 0bb51159003e2895df941b14d0b98fa1ac763453
-
+        document.getElementById('modalCarTitle').textContent = name;
+        document.getElementById('modalCarDesc').textContent = desc;
+        var imgEl = document.getElementById('modalCarImg');
+        imgEl.src = img;
+        imgEl.alt = name;
+      });
+    })();
+  </script>
 </body>
 </html>
-
-<<<<<<< HEAD
-      <section id="feedback" class="section-box">
-        <h2>Feedback Form</h2>
-        <form>
-          <label for="name">Name:</label><br>
-          <input type="text" id="name" name="name" placeholder="Your Name"><br>
-
-
-          <label for="email">Email:</label><br>
-          <input type="email" id="email" name="email" placeholder="Your Email"><br>
-
-
-          <label for="car">Favorite Car:</label><br>
-          <input type="text" id="car" name="car" placeholder="Car Name"><br>
-
-
-          <label for="color">Favorite Color:</label><br>
-          <input type="color" id="color" name="color"><br>
-
-
-          <label for="message">Message:</label><br>
-          <textarea id="message" name="message" rows="4" placeholder="Your message"></textarea><br>
-
-
-          <input type="submit" value="Submit" class="btn">
-        </form>
-      </section>
-    </main>
-
-
-    <footer>
-      <p>© 2025 Supercars Project | SE-2416 | Batyrkhan Kairzhanov</p>
-    </footer>
-
-
-  </div>
-
-</body>
-</html>  
-
-
-=======
->>>>>>> 0bb51159003e2895df941b14d0b98fa1ac763453
